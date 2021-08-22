@@ -21,15 +21,16 @@
  
   ```SQL SELECT Title FROM Movies;```
  2. Show all the distinct ratings in the database.
- ```SQL SELECT DISTINCT Rating FROM Movies; 
- ```
+ 
+ ```SQL SELECT DISTINCT Rating FROM Movies; ```
  3. Show all unrated movies.
- ```SQL SELECT * FROM Movies WHERE Rating IS NULL;
- ```
+ 
+ ```SQL SELECT * FROM Movies WHERE Rating IS NULL; ```
  4. Select all movie theaters that are not currently showing a movie.
- ```SQL SELECT * FROM MovieTheaters WHERE Movie IS NULL; 
- ```
+ 
+ ```SQL SELECT * FROM MovieTheaters WHERE Movie IS NULL; ```
  5. Select all data from all movie theaters and, additionally, the data from the movie that is being shown in the theater (if one is being shown).
+ 
  ```SQL SELECT * FROM MovieTheaters LEFT OUTER JOIN Movies M on MovieTheaters.Movie = M.Code;```
  6. Select all data from all movies and, if that movie is being shown in a theater, show the data from the theater.
  ```SQL SELECT * FROM MovieTheaters RIGHT OUTER JOIN Movies M on MovieTheaters.Movie = M.Code;```
