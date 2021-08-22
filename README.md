@@ -2,7 +2,7 @@
 # Movie-theatres
 ![img](https://upload.wikimedia.org/wikipedia/commons/f/ff/Sql_movie_theaters.png)
 
-## Table creation code
+## *Table creation code*
 ```SQL CREATE TABLE Movies (
    Code INTEGER PRIMARY KEY NOT NULL,
    Title TEXT NOT NULL,
@@ -16,7 +16,7 @@
      CONSTRAINT fk_Movies_Code REFERENCES Movies(Code)
  );
 ```
- ## Sample dataset
+ ## *Sample dataset*
  ```SQL INSERT INTO Movies(Code,Title,Rating) VALUES (9,'Citizen King','G');
  INSERT INTO Movies(Code,Title,Rating) VALUES (1,'Citizen Kane','PG');
  INSERT INTO Movies(Code,Title,Rating) VALUES (2,'Singin'' in the Rain','G');
@@ -35,7 +35,7 @@
  INSERT INTO MovieTheaters(Code,Name,Movie) VALUES (6,'Nickelodeon',NULL);
 ```
 
- ## Exercises
+ ## *Exercises*
  1. Select the title of all movies.
   
  2. Show all the distinct ratings in the database.
@@ -57,7 +57,7 @@
  10. Remove movie theaters projecting movies rated "NC-17".
 
  
- ## Answers
+ ## *Answers*
 1. ```SQL SELECT Title FROM Movies;```
 2. ```SQL SELECT DISTINCT Rating FROM Movies; ```
 3. ```SQL SELECT * FROM Movies WHERE Rating IS NULL; ```
