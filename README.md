@@ -18,8 +18,8 @@
 
  ## Exercises
  1. Select the title of all movies.
-  ```SQL SELECT Title FROM Movies;
-  ```
+ 
+  ```SQL SELECT Title FROM Movies;```
  2. Show all the distinct ratings in the database.
  ```SQL SELECT DISTINCT Rating FROM Movies; 
  ```
